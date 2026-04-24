@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "product-service-lab2",
+		"_postman_id": "7810188e-8dc0-4e5b-80f3-eac262c82bdc",
 		"name": "product-service-lab2",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41089079"
 	},
 	"item": [
 		{
@@ -52,47 +53,15 @@
 			"name": "Create Product",
 			"request": {
 				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"Webcam\",\n  \"price\": 99.99,\n  \"stockQty\": 20,\n  \"category\": \"Peripherals\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/v1/products",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Product - Invalid",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+					"raw": "{\"name\": \"Laptop\", \"category\": \"Tech\", \"price\": 999.99, \"stockQty\": 10}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
 					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"name\": \"\",\n  \"price\": -5,\n  \"stockQty\": 0,\n  \"category\": \"\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/api/v1/products",
@@ -114,16 +83,15 @@
 			"name": "Update Product",
 			"request": {
 				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"Pro Webcam\",\n  \"price\": 129.99,\n  \"stockQty\": 10,\n  \"category\": \"Peripherals\"\n}"
+					"raw": "{\"name\": \"Laptop\", \"category\": \"Tech\", \"price\": 899.99, \"stockQty\": 10}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "http://localhost:8080/api/v1/products/1",
@@ -147,6 +115,10 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Laptop\", \"category\": \"Tech\", \"price\": 899.99, \"stockQty\": 10}"
+				},
 				"url": {
 					"raw": "http://localhost:8080/api/v1/products/1",
 					"protocol": "http",
@@ -159,28 +131,6 @@
 						"v1",
 						"products",
 						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Non-existent Product",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/products/9999",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"products",
-						"9999"
 					]
 				}
 			},
