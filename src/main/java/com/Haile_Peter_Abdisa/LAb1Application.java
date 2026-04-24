@@ -6,7 +6,7 @@ import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 
 @SpringBootApplication
-@OpenAPIDefinition(info = @Info(title = "Product Service API", version = "1.0.0", description = "RESTful Product Catalogue — Lab 22"))
+@OpenAPIDefinition(info = @Info(title = "Product Service API", version = "1.0.0", description = "RESTful Product Catalogue — Lab 2"))
 public class LAb1Application {
 
     public static void main(String[] args) {
