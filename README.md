@@ -30,8 +30,7 @@ On **macOS / Linux**:
 
 This project uses OpenAPI (Swagger) to automatically generate interactive API documentation. 
 
-Once the application is running, you can view the Swagger UI here:  
-**[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)**
+Once the application is running, you can view the Swagger UI here: 👉 **[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)**
 
 ## API Endpoints
 
