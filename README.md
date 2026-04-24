@@ -1,6 +1,6 @@
 # Lab 2: Product Catalogue REST API
 
-[![CI](https://github.com/USERNAME/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/REPO/actions/workflows/ci.yml)
+[![CI](https://github.com/p3ter-dev/Lab-2/actions/workflows/ci.yml/badge.svg)](https://github.com/p3ter-dev/Lab-2/actions/workflows/ci.yml)
 
 A Spring Boot-based REST API for managing a product catalogue. This project implements full CRUD operations, robust request validation, standardized error handling (RFC 9457), and automated testing.
 
